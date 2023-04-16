@@ -3,14 +3,14 @@ function fibonacci(num) {
 	let first = 0;
 	let second = 1;
 
-	if(num == 0){
+	if(num == 1){
 		console.log(first);
 	}
-	else if(num == 1){
+	else if(num == 2){
 		console.log(second)
 	}
 	else{
-		for(let i=2;i<=num;i++){
+		for(let i=3;i<=num;i++){
 			let third = first + second;
 			first = second;
 			second = third;
