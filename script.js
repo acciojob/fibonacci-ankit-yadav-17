@@ -1,7 +1,7 @@
 function fibonacci(num) {
 // your code here
-	let first = 0;
-	let second = 1;
+	var first = 0;
+	var second = 1;
 
 	if(num == 1){
 		console.log(first);
@@ -10,12 +10,13 @@ function fibonacci(num) {
 		console.log(second)
 	}
 	else{
-		for(let i=3;i<=num;i++){
-			let third = first + second;
+		for(var i=3;i<=num;i++){
+			var third = first + second;
 			first = second;
 			second = third;
-			console.log(third);
+			
 		}
+		console.log(third);
 	}
 }
 
