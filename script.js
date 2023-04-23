@@ -1,24 +1,9 @@
-function fibonacci(num) {
-// your code here
-	var first = 0;
-	var second = 1;
-	var third =0;
+let fib =[0,1]
+function fibonacci(num){
 
-	if(num == 1){
-		console.log(first);
+	for(let i=2;i<num;i++){
+		fib[i] = fib[i-1] + fib[i-2];
 	}
-	else if(num == 2){
-		console.log(second)
-	}
-	else{
-		for(let i=3;i<=num;i++){
-			third = first + second;
-			first = second;
-			second = third;
-			
-		}
-		console.log(third);
-	}
+	return fib[num-1]
 }
-
-module.exports = fibonacci;
+module.exports = fibonacci
